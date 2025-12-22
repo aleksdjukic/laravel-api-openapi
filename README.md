@@ -18,7 +18,13 @@ Request flow: HTTP Request → Controller → Validation → Model → Resource 
 
 ## API Documentation (Swagger)
 
-The API is fully documented using OpenAPI 3.0 annotations. Swagger UI provides endpoint descriptions, request body schemas, path parameters, response schemas, and HTTP status codes. Once generated, the documentation is available at `/api/documentation`.
+The API is fully documented using OpenAPI 3.0 annotations. Swagger UI provides endpoint descriptions, request body schemas, path parameters, response schemas, and HTTP status codes.
+
+Once generated, the documentation is available at:
+
+/api/documentation
+
+![Swagger API Documentation](public/Screenshot.png)
 
 ## Running the Project Locally
 
