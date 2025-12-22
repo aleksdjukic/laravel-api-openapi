@@ -1,5 +1,11 @@
 # Laravel API + OpenAPI (Swagger)
 
+![CI](https://github.com/aleksdjukic/laravel-api-openapi/actions/workflows/ci.yml/badge.svg)
+![PHP](https://img.shields.io/badge/PHP-8.4-blue)
+![Laravel](https://img.shields.io/badge/Laravel-12-red)
+![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-green)
+![Swagger](https://img.shields.io/badge/Swagger-UI-brightgreen)
+
 This repository demonstrates a **production-style Laravel REST API**
 documented with **OpenAPI 3.0 (Swagger)**.
 
