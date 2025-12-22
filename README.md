@@ -53,3 +53,7 @@ tests on every push and pull request.
 
 The CI pipeline ensures that the API structure, documentation, and
 application setup remain consistent and reproducible.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and notable changes.
