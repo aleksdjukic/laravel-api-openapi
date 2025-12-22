@@ -44,3 +44,12 @@ http://127.0.0.1:8000/api/v1
 ## Project Scope
 
 This project focuses on application-layer API design. Authentication, frontend integration, and advanced infrastructure concerns are intentionally omitted to keep the emphasis on API structure, data flow, documentation, and code clarity.
+
+## CI & Documentation
+
+This project includes a GitHub Actions workflow that validates the
+application build, generates Swagger documentation, and runs automated
+tests on every push and pull request.
+
+The CI pipeline ensures that the API structure, documentation, and
+application setup remain consistent and reproducible.
