@@ -5,6 +5,7 @@
 ![Laravel](https://img.shields.io/badge/Laravel-12-red)
 ![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-green)
 ![Swagger](https://img.shields.io/badge/Swagger-UI-brightgreen)
+![Postman](https://img.shields.io/badge/Postman-Collection-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 This repository demonstrates a **production-style Laravel REST API**
@@ -32,6 +33,40 @@ Once generated, the documentation is available at:
 /api/documentation
 
 ![Swagger API Documentation](public/Screenshot.png)
+
+## API Testing (Postman & Feature Tests)
+
+### Postman Collection
+
+A ready-to-use Postman collection is included for testing all CRUD endpoints.
+
+Location:
+docs/postman/laravel-api-tasks.postman_collection.json
+
+How to use:
+1. Import the collection into Postman  
+2. Set the base_url environment variable  
+3. Execute Create / Read / Update / Delete requests  
+
+The collection mirrors the OpenAPI documentation and allows fast validation of all endpoints.
+
+### Feature Tests (Laravel)
+
+CRUD functionality is covered with Laravel Feature tests.
+
+Location:
+tests/Feature/TaskApiTest.php
+
+Covered:
+- Create task
+- Validation errors
+- Fetch single task
+- Update task
+- Delete task
+- Database assertions
+- HTTP status validation
+
+These tests ensure API correctness and alignment with the OpenAPI contract.
 
 ## Running the Project Locally
 
