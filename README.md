@@ -5,6 +5,7 @@
 ![Laravel](https://img.shields.io/badge/Laravel-12-red)
 ![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0-green)
 ![Swagger](https://img.shields.io/badge/Swagger-UI-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 This repository demonstrates a **production-style Laravel REST API**
 documented with **OpenAPI 3.0 (Swagger)**.
@@ -72,4 +73,4 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and notable changes.
 
 ## License
 
-All rights reserved.
+MIT
