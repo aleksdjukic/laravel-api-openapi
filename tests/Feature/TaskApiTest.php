@@ -20,13 +20,11 @@ class TaskApiTest extends TestCase
         $response
             ->assertStatus(201)
             ->assertJsonStructure([
-                'data' => [
-                    'id',
-                    'title',
-                    'description',
-                    'completed',
-                    'created_at',
-                ]
+                'id',
+                'title',
+                'description',
+                'completed',
+                'created_at',
             ]);
 
         $this->assertDatabaseHas('tasks', [
@@ -43,25 +41,34 @@ class TaskApiTest extends TestCase
 
     public function test_can_update_task(): void
     {
-        $task = Task::factory()->create();
+        $task = Task::create([
+            'title' => 'Old title',
+            'description' => 'Old desc',
+            'completed' => false,
+        ]);
 
         $response = $this->putJson("/api/v1/tasks/{$task->id}", [
-            'completed' => true
+            'completed' => true,
         ]);
 
         $response->assertStatus(200);
+
         $this->assertTrue($task->fresh()->completed);
     }
 
     public function test_can_delete_task(): void
     {
-        $task = Task::factory()->create();
+        $task = Task::create([
+            'title' => 'Delete me',
+            'description' => 'Test',
+        ]);
 
         $response = $this->deleteJson("/api/v1/tasks/{$task->id}");
 
         $response->assertStatus(204);
+
         $this->assertDatabaseMissing('tasks', [
-            'id' => $task->id
+            'id' => $task->id,
         ]);
     }
 }
