@@ -69,3 +69,7 @@ application setup remain consistent and reproducible.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and notable changes.
+
+## License
+
+All rights reserved.
